@@ -1,9 +1,17 @@
+:root {
+      --cols: 6;
+}
+body {
+      font-family: monospace;
+      font-size: 110%;
+}
 table {
-
+      width: 100%;
+      font-size: 110%;
+}
+tr {
+      width: 100%;
 }
 td {
-
-}
-th {
-
+      width: calc(100% / var(--cols));
 }
