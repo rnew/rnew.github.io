@@ -9,36 +9,38 @@
 <table>
 <tr>
 <th>System \ Compiler</th>
-<td>gcc</td>
-<td>clang</td>
-<td>mingw</td>
-<td>msvc</td>
-<td>Intel</td>
+<td>gcc</td><!-- gcc -->
+<td>clang</td><!-- clang -->
+<td>mingw</td><!-- mingw -->
+<td>msvc</td><!-- msvc -->
+<td>Intel</td><!-- Intel -->
 </tr>
 <tr>
-<td>Windows</td>
-<td>-</td>
-<td>-</td>
-<td>-</td>
-<td>-</td>
-<td>-</td>
+<td>Windows x86-64</td>
+<td>-</td><!-- gcc -->
+<td>-</td><!-- clang -->
+<td>-</td><!-- mingw -->
+<td>_M_AMD64 _M_X64 _MSC_VER _WIN32 _WIN64</td><!-- msvc -->
+<td>-</td><!-- Intel -->
 </tr>
 <tr>
-<td>Linux</td>
-<td>-</td>
-<td>-</td>
-<td>-</td>
-<td>-</td>
-<td>-</td>
+<td>Linux x86-64</td>
+<td>__amd64 __amd64__ __gnu_linux__ __GNUC__ __linux __linux__ __unix __unix__ __x86_64 __x86_64__ linux unix</td><!-- gcc -->
+<td>__amd64 __amd64__ __clang__ __gnu_linux__ __GNUC__ __linux __linux__ __unix __unix__ __x86_64 __x86_64__ linux unix</td><!-- clang -->
+<td>-</td><!-- mingw -->
+<td>-</td><!-- msvc -->
+<td>__amd64 __amd64__ __GNUC__ __ICC __INTEL_COMPILER __linux __linux__ __unix __unix__ __x86_64 __x86_64__ linux unix</td><!-- Intel -->
 </tr>
 <tr>
-<td>MacOS</td>
-<td>-</td>
-<td>-</td>
-<td>-</td>
-<td>-</td>
-<td>-</td>
+<td>MacOS x86-64</td>
+<td>-</td><!-- gcc -->
+<td>-</td><!-- clang -->
+<td>-</td><!-- mingw -->
+<td>-</td><!-- msvc -->
+<td>-</td><!-- Intel -->
 </tr>
 </table>
+<br/>gcc 4.9.4: __GNUC__==4 && __GNUC_MINOR__==9 && __GNUC_PATCHLEVEL__==4<br/>
+clang 3.9.1: __clang_major__==3 && __clang_minor__==9 && __clang_patchlevel__==1
 </body>
 </html>
