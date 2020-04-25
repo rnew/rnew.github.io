@@ -5,6 +5,9 @@ body {
       font-family: monospace;
       font-size: 110%;
 }
+h1 {
+      text-align: center;
+}
 table {
       width: 100%;
       font-size: 110%;
